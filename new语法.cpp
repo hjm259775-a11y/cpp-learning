@@ -29,7 +29,7 @@ void test(){
         cout<<m[i]<<endl;
     }
 
-    delete[] m;//告知此为数组
+    delete[] m;//[]告知此为数组
     //释放堆区数组
 
     for(int i=0;i<10;i++){
