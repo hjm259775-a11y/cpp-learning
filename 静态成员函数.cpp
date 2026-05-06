@@ -8,25 +8,14 @@ class myn
 public:
     static void hanshu()//加static变成静态成员函数
     {
-        ccb=100;
-        //cc=10;//无法访问，因为无法区分是哪个对象的cc
         cout<<"静态成员函数"<<endl;
     }
 
-
-
-
-    int cc;
-    static int ccb;//静态成员变量
 private:
-//静态成员函数也是有访问权限的
-    static void hanshu1()
-    {
-        cout<<"静态成员函数"<<endl;
-    }
+
 
 };
-int myn::ccb=0;
+
 
 
 
