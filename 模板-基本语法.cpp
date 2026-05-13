@@ -20,7 +20,7 @@ void jiaofu(double &a,double &b)
 }
 
 //函数模板
-template<typename T>//声明一个模板，typename可以用class代替
+template<typename T>//声明一个模板
 //告诉编译器后面代码中紧跟着的T不要报错，T是一个通用数据类型
 void jiao(T &a,T &b)
 {
@@ -35,13 +35,13 @@ void ceshi1()
     int a=10;
     int b=20;
     //jiaozheng(a,b);
-    jiao(a,b);//自动类型推导
+    jiao(a,b);
     cout<<a<<" "<<b<<endl;
 
     double c=1.1;
     double d=2.2;
     //jiaofu(c,d);
-    jiao<double>(c,d);//显示指定类型
+    jiao<double>(c,d);
     cout<<c<<" "<<d<<endl;
 }
 
