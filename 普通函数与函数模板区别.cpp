@@ -29,7 +29,7 @@ void ceshi2()
     int a=20;
     int b=10;
     int c='c';
-    cout<<hanshu2<int>(a,c)<<endl;
+    cout<<hanshu2(a,c)<<endl;
 }
 
 int main()
