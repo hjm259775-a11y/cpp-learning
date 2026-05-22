@@ -1,48 +1,47 @@
 #include<bits/stdc++.h>
 using namespace std;
-//类模板与函数模板区别主要有两点:
-//1.类模板没有自动类型推导的使用方式
-//2.类模板在模板参数列表中可以有默认参数.
+//类模板中成员函数创建时机
+//类模板中成员函数在调用时才去创建
 
-template<class NAME,class AGE=int>//这就是默认参数
+class myn1
+{
+public:
+    void shuchu()
+    {
+        cout<<"1输出"<<endl;
+    }
+};
+
+class myn2
+{
+public:
+    void shuchu()
+    {
+        cout<<"2输出"<<endl;
+    }
+};
+
+template<class T>
 class myn
 {
 public:
-    myn(NAME n,AGE a)
+    T hhh;
+    //类模板中的成员函数
+    void hanshu1()
     {
-        this->age=a;
-        this->name=n;
+        hhh.shuchu();
     }
-    void shuchu()
-    {
-        cout<<this->name<<" "<<this->age<<endl;
-    }
-
-
-    NAME name;
-    AGE age;
 };
 
 
-//1.类模板没有自动类型推导的使用方式
 void ceshi1()
 {   
-    myn<string,int>p1("leziren",18);
-    p1.shuchu();
 
-}
-
-//2.类模板在模板参数列表中可以有默认参数
-void ceshi2()
-{
-    myn<string>p2("hajimi",10);//删了个int
-    p2.shuchu();
 }
 
 
 int main()
 {
     ceshi1();
-    ceshi2();
     return 0;
 }
