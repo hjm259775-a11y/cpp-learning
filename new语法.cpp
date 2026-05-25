@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//new的基本语法
+//new的基本语法:
 
 int* hhh(){
     //new让

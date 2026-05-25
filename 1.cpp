@@ -26,7 +26,7 @@ class myn
 {
 public:
     T hhh;
-    //类模板中的成员函数，666
+    //类模板中的成员函数
     void hanshu1()
     {
         hhh.shuchu();
