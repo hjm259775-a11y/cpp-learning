@@ -1,7 +1,4 @@
 ﻿#include<bits/stdc++.h>
-#include <thread>
-#include <atomic>
-#include <chrono>
 using namespace std;
 //c++多线程
 
@@ -31,6 +28,7 @@ void hanshu2(int &n)
     cout<<n<<endl;
 }
 
+
 atomic<bool> panduan(false);//这个变量会被两个线程同时访问，存在数据竞争，要用atomic<bool>
 void hanshu3()
 {
@@ -41,6 +39,7 @@ void hanshu3()
     }
     cout<<"线程安全退出^_^"<<endl;
 }
+
 
 
 int main()
@@ -64,9 +63,10 @@ int main()
     
     auto now = system_clock::now();// 获取当前系统时间（以系统时钟为准，包含日期时间）
     auto target_time = now + 2s;// 计算目标时间点：当前时间 + 2 秒（即 2 秒后）
-    std::this_thread::sleep_until(target_time);// 休眠到目标时间点(若调用时系统时间已超过目标时间，函数立即返回。)
+    std::this_thread::sleep_until(target_time);// 休眠到目标时间点
     std::cout << "已到达目标时间点！" << std::endl;// 到达目标时间点后执行
 
-    
+
+
     return 0;
 }
