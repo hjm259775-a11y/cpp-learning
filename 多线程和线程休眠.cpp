@@ -63,8 +63,8 @@ int main()
     
     auto now = system_clock::now();// 获取当前系统时间（以系统时钟为准，包含日期时间）
     auto target_time = now + 2s;// 计算目标时间点：当前时间 + 2 秒（即 2 秒后）
-    std::this_thread::sleep_until(target_time);// 休眠到目标时间点
-    std::cout << "已到达目标时间点！" << std::endl;// 到达目标时间点后执行
+    this_thread::sleep_until(target_time);// 休眠到目标时间点
+    cout << "已到达目标时间点！" <<endl;// 到达目标时间点后执行
 
 
 
