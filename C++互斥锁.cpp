@@ -4,7 +4,7 @@
 #include <chrono>
 #include<mutex>
 using namespace std;
-// C++ 互斥锁的三种常见用法
+// C++ 互斥锁的三种常见用法：
 // std::mutex	                不自动解锁	  最基础的互斥锁，需手动 lock/unlock	    灵活控制锁时机
 // std::lock_guard<std::mutex>	自动解锁	  自动加锁、自动释放，作用域结束自动解锁	 简单作用域加锁
 // std::unique_lock<std::mutex>	自动解锁	  功能更强（可延迟加锁、可解锁再加锁）	     条件变量、复杂锁逻辑
