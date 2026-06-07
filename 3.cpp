@@ -35,16 +35,7 @@ int main()
             int ans = 0;
             for (int i = 3; i <= 14; i++)
             {
-                if (has[i] == 1)
-					for(int j=i;j<=14;j++)
-					{
-						if(has[j]==1)
-						{
-							cout<<ans<<" ";
-							ans=max(ans,j-i+1);
-						}else break;
-					}
-				}
+				cout << "1" << endl;
 				if(ans>=5)cout<<ans<<'\n';
 				else cout<<0<<'\n';
 			}
