@@ -1,8 +1,6 @@
 ﻿#include<bits/stdc++.h>
 using namespace std;
 
-int has[40];
-
 int main()
 {
 
@@ -11,7 +9,6 @@ int main()
 		cin>>t;
 		while(t--)
 		{
-			memset(has,0,sizeof has);
 			
 			for(int i=0;i<17;i++)
 			{
@@ -47,6 +44,7 @@ int main()
 				}
 				if(ans>=5)cout<<ans<<'\n';
 				else cout<<0<<'\n';
+				cout << "1" << endl;
 			}
 	
  } 
