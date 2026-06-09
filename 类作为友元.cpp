@@ -10,8 +10,6 @@ public:
 
     lei *ccb;
 
-
-
 };
 class lei
 {
@@ -29,8 +27,8 @@ private:
 //类外写成员函数
 lei::lei()
 {
-    keting="客厅";
-    woshi="卧室";
+    keting = "客厅;";
+    woshi = "卧室;";
 }
 myn::myn()
 {
@@ -47,8 +45,10 @@ void ceshi1()
     myn lezi;
     lezi.hanshu();
 }
+
 int main()
 {
     ceshi1();
     return 0;
+
 }
