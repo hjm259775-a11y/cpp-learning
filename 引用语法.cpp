@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//引用，给变量起别名
+//引用，给变量起别名。
 
 //引用函数参数
 void dada(int &a,int &b){
