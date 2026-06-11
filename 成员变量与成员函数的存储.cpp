@@ -22,7 +22,7 @@ void ceshi2()
     myn hhh;
     cout<<sizeof(hhh)<<endl;
 }
-void ceshi3()
+void ceshi()
 {
     myn le;
     cout<<sizeof(le)<<endl;
@@ -32,6 +32,6 @@ int main()
 {
     ceshi1();//空的占用一个字节
     ceshi2();//要是有变量就按变量大小占用
-    ceshi3();//没算静态，说明静态对象不属于对象
+    ceshi();//没算静态，说明静态对象不属于对象
     return 0;
 }

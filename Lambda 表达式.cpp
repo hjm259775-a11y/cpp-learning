@@ -3,7 +3,7 @@ using namespace std;
 
 //Lambda 表达式
 //匿名函数
-//[捕获列表](参数列表) -> 返回类型 { 函数体 }
+//[捕获列表](参数列表) -> 返回类型 { 函数体 }；
 
 
 struct Person
