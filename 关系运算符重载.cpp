@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-//关系运算符重载
+//关系运算符重载。
+//
 
 class myn
 {

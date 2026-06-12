@@ -15,7 +15,7 @@ void zhanwei(int a,int){
 //--------------------------------------------------------
 
 void myn(){
-    cout<<"myn"<<endl;
+    cout<<"mynn"<<endl;
 }
 void myn(int a){
     cout<<"xgz"<<endl;
