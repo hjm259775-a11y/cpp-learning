@@ -31,7 +31,7 @@ int caozuo(int a,int b)
 }
 void ceshi2(int a,int b,int(*zhege)(int x,int y))
 {
-    cout<<caozuo(a,b)<<endl;;
+    cout<<zhege(a,b)<<endl;
 }
 //有参有值回调函数
 
