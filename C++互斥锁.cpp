@@ -36,6 +36,7 @@ void hanshu2(int n)
     // 不能延迟加锁
 
     cout<<n<<endl;
+    cout << endl;
 }
 
 void hanshu3(int n)
